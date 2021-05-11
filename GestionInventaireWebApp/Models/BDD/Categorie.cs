@@ -9,6 +9,7 @@ namespace GestionInventaireWebApp.Models.BDD
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public bool isActive { get; set; }
         public ICollection<Article> Articles { get; set; }
     }
 }

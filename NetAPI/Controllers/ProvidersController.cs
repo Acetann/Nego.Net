@@ -24,7 +24,7 @@ namespace NetAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Provider>>> GetProviders()
         {
-            return await _context.Providers.ToListAsync();
+            return await _context.Providers.Where(x => x.isActive == true).ToListAsync();
         }
 
         // GET: api/Providers/5

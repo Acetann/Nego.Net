@@ -309,12 +309,12 @@ namespace GestionInventaireWinForms
                 DataGridViewRow selectedRow = dataGridView_Client.Rows[selectedrowindex];
 
                 idClient = Convert.ToString(selectedRow.Cells["Id"].Value);
-                firstNameClient = Convert.ToString(selectedRow.Cells["Prénom"].Value);
-                lastNameClient = Convert.ToString(selectedRow.Cells["Nom"].Value);
-                EmailClient = Convert.ToString(selectedRow.Cells["Mail"].Value);
-                AdresseClient = Convert.ToString(selectedRow.Cells["Adresse"].Value);
-                TelClient = Convert.ToString(selectedRow.Cells["Tel"].Value);
-                IsActive = Convert.ToString(selectedRow.Cells["IsActive"].Value);
+                firstNameClient = Convert.ToString(selectedRow.Cells["FirstName"].Value);
+                lastNameClient = Convert.ToString(selectedRow.Cells["LastName"].Value);
+                EmailClient = Convert.ToString(selectedRow.Cells["Email"].Value);
+                AdresseClient = Convert.ToString(selectedRow.Cells["Address"].Value);
+                TelClient = Convert.ToString(selectedRow.Cells["PhoneNumber"].Value);
+                IsActive = Convert.ToString(selectedRow.Cells["isActive"].Value);
 
 
             }
@@ -334,7 +334,7 @@ namespace GestionInventaireWinForms
                 requestStream.Write(byteArray, 0, byteArray.Length);
             }
             MessageBox.Show("Vous avez suppprimé " + lastNameClient);
-            appel_Api("http://localhost:44319/api/Clients");
+            appel_Api("https://localhost:44319/api/Users");
         }
 
         private void btn_DeleteFournisseur_Click(object sender, EventArgs e)

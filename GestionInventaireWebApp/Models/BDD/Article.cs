@@ -14,6 +14,7 @@ namespace GestionInventaireWebApp.Models.BDD
         public int SellPrice { get; set; }
         public Provider Provider { get; set; }
         public Categorie Categorie { get; set; }
+        public bool isActive { get; set; }
         public ICollection<OrderArticle> OrderArticles { get; set; }
         public Stock Stock { get; set; }
     }

@@ -12,6 +12,7 @@ namespace GestionInventaireWebApp.Models.BDD
         public string Email { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
+        public bool isActive { get; set; }
         public ICollection<Article> Articles { get; set; }
 
     }

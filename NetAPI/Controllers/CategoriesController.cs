@@ -24,7 +24,7 @@ namespace NetAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categorie>>> GetCategories()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories.Where(x => x.isActive == true).ToListAsync();
         }
 
         // GET: api/Categories/5
