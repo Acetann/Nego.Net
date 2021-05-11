@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9QMW+h3aXlS3RjDMXlkStVohffBgLpv2fQGfWFHoOWIIsysFiyy023Hp8frX1x+N0pG0kmvej6QSiv/cr7/pZg==",
+  "dgSpecHash": "Ii8ZB4wCPdaUEJVUBbofDJCiGkAK7N/tZBRZ3kdT4KaC0hDf3PTmj7G2Eww/ybYpiF0GQw97k+hYGf/jJLSyMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\NetAPI\\NetAPI.csproj",
+  "projectFilePath": "C:\\Users\\paulf\\source\\repos\\Negocier\\NetAPI\\NetAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paulf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\paulf\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",

@@ -7576,11 +7576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paulf\\Source\\Repos\\Nego\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\paulf\\source\\repos\\Negocier\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj",
       "projectName": "GestionInventaireWebApp",
-      "projectPath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj",
+      "projectPath": "C:\\Users\\paulf\\source\\repos\\Negocier\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj",
       "packagesPath": "C:\\Users\\paulf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\GestionInventaireWebApp\\obj\\",
+      "outputPath": "C:\\Users\\paulf\\source\\repos\\Negocier\\GestionInventaireWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulf\\AppData\\Roaming\\NuGet\\NuGet.Config",

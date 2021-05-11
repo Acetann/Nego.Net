@@ -7821,11 +7821,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paulf\\Source\\Repos\\Nego\\NetAPI\\NetAPI.csproj",
+      "projectUniqueName": "C:\\Users\\paulf\\source\\repos\\Negocier\\NetAPI\\NetAPI.csproj",
       "projectName": "NetAPI",
-      "projectPath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\NetAPI\\NetAPI.csproj",
+      "projectPath": "C:\\Users\\paulf\\source\\repos\\Negocier\\NetAPI\\NetAPI.csproj",
       "packagesPath": "C:\\Users\\paulf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\NetAPI\\obj\\",
+      "outputPath": "C:\\Users\\paulf\\source\\repos\\Negocier\\NetAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulf\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7842,8 +7842,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\paulf\\Source\\Repos\\Nego\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj": {
-              "projectPath": "C:\\Users\\paulf\\Source\\Repos\\Nego\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj"
+            "C:\\Users\\paulf\\source\\repos\\Negocier\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj": {
+              "projectPath": "C:\\Users\\paulf\\source\\repos\\Negocier\\GestionInventaireWebApp\\GestionInventaireWebApp.csproj"
             }
           }
         }

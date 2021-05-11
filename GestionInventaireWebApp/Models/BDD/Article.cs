@@ -9,6 +9,10 @@ namespace GestionInventaireWebApp.Models.BDD
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
+        public string Domaine { get; set; }
+        public string Imgurl { get; set; }
+        public string Volume { get; set; }
         public DateTime CreateDate { get; set; }
         public int BuyPrice { get; set; }
         public int SellPrice { get; set; }
