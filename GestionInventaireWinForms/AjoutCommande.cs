@@ -101,8 +101,8 @@ namespace GestionInventaireWinForms
 
         private void button_FinCommande_Click(object sender, EventArgs e)
         {
-            // On créer une commande
-            string url = "https://localhost:44319/api/Orderss";
+            // On créé une commande
+            string url = "https://localhost:44319/api/Orders";
 
             prixtotaux = 0;
             foreach (KeyValuePair<string, int> entry in listSelect)
@@ -139,7 +139,7 @@ namespace GestionInventaireWinForms
                 // Pour chaque Article dans la commande
                 foreach (KeyValuePair<long, int> entry in listSelectCmd)
                 {
-                    url = "https://localhost:44319/api/OrdersProduit";
+                    url = "https://localhost:44319/api/OrderArticles";
                     var idSelectLoop = entry.Key;
                     var quantiteLoop = entry.Value;
                     var allStockId = from r in arr
