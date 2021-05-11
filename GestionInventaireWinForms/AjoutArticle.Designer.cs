@@ -247,6 +247,7 @@ namespace GestionInventaireWinForms
             this.Controls.Add(this.label1_nomArticle);
             this.Name = "AjoutArticle";
             this.Text = "AjoutArticle";
+            this.Load += new System.EventHandler(this.AjoutProduit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

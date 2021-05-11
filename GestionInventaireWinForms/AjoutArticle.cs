@@ -217,8 +217,8 @@ namespace GestionInventaireWinForms
                     var list = new BindingList<ProviderDTO>(arr);
                     var data = new BindingSource(list, null);
                     comboBox_fournisseurArticle.DataSource = data.DataSource;
-                    comboBox_fournisseurArticle.DisplayMember = "nomEntreprise";
-                    comboBox_fournisseurArticle.ValueMember = "nomEntreprise";
+                    comboBox_fournisseurArticle.DisplayMember = "Name";
+                    comboBox_fournisseurArticle.ValueMember = "Name";
 
                 }
                 else
