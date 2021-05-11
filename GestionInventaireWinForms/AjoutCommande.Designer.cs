@@ -48,9 +48,11 @@ namespace GestionInventaireWinForms
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(533, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(711, 26);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(859, 533);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1145, 656);
             this.dataGridView1.TabIndex = 0;
             // 
             // Titre_Commande
@@ -58,9 +60,10 @@ namespace GestionInventaireWinForms
             this.Titre_Commande.AutoSize = true;
             this.Titre_Commande.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Titre_Commande.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titre_Commande.Location = new System.Drawing.Point(205, 9);
+            this.Titre_Commande.Location = new System.Drawing.Point(273, 11);
+            this.Titre_Commande.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Titre_Commande.Name = "Titre_Commande";
-            this.Titre_Commande.Size = new System.Drawing.Size(153, 31);
+            this.Titre_Commande.Size = new System.Drawing.Size(193, 39);
             this.Titre_Commande.TabIndex = 1;
             this.Titre_Commande.Text = "Commande";
             // 
@@ -68,9 +71,10 @@ namespace GestionInventaireWinForms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 125);
+            this.label2.Location = new System.Drawing.Point(108, 154);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 18);
+            this.label2.Size = new System.Drawing.Size(88, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Produits :";
             // 
@@ -78,9 +82,10 @@ namespace GestionInventaireWinForms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(81, 243);
+            this.label3.Location = new System.Drawing.Point(108, 299);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 18);
+            this.label3.Size = new System.Drawing.Size(95, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Quantité  :";
             // 
@@ -88,9 +93,10 @@ namespace GestionInventaireWinForms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(81, 353);
+            this.label4.Location = new System.Drawing.Point(108, 434);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 18);
+            this.label4.Size = new System.Drawing.Size(103, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Prix Total  :";
             // 
@@ -98,9 +104,10 @@ namespace GestionInventaireWinForms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 459);
+            this.label5.Location = new System.Drawing.Point(108, 565);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 18);
+            this.label5.Size = new System.Drawing.Size(58, 24);
             this.label5.TabIndex = 5;
             this.label5.Text = "Date :";
             // 
@@ -108,42 +115,48 @@ namespace GestionInventaireWinForms
             // 
             this.comboBox_ArticlesCommande.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_ArticlesCommande.FormattingEnabled = true;
-            this.comboBox_ArticlesCommande.Location = new System.Drawing.Point(211, 124);
+            this.comboBox_ArticlesCommande.Location = new System.Drawing.Point(281, 153);
+            this.comboBox_ArticlesCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox_ArticlesCommande.Name = "comboBox_ArticlesCommande";
-            this.comboBox_ArticlesCommande.Size = new System.Drawing.Size(199, 24);
+            this.comboBox_ArticlesCommande.Size = new System.Drawing.Size(264, 28);
             this.comboBox_ArticlesCommande.TabIndex = 6;
+            this.comboBox_ArticlesCommande.SelectedIndexChanged += new System.EventHandler(this.comboBox_ArticlesCommande_SelectedIndexChanged);
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(211, 245);
+            this.numericUpDown1.Location = new System.Drawing.Point(281, 302);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(199, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(265, 26);
             this.numericUpDown1.TabIndex = 7;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(210, 455);
+            this.dateTimePicker1.Location = new System.Drawing.Point(280, 560);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 26);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // textBox_PrixTotal
             // 
             this.textBox_PrixTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_PrixTotal.Location = new System.Drawing.Point(211, 353);
+            this.textBox_PrixTotal.Location = new System.Drawing.Point(281, 434);
+            this.textBox_PrixTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_PrixTotal.Name = "textBox_PrixTotal";
-            this.textBox_PrixTotal.Size = new System.Drawing.Size(199, 22);
+            this.textBox_PrixTotal.Size = new System.Drawing.Size(264, 26);
             this.textBox_PrixTotal.TabIndex = 9;
             // 
             // button_AjoutCommande
             // 
             this.button_AjoutCommande.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_AjoutCommande.Location = new System.Drawing.Point(210, 586);
+            this.button_AjoutCommande.Location = new System.Drawing.Point(280, 721);
+            this.button_AjoutCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_AjoutCommande.Name = "button_AjoutCommande";
-            this.button_AjoutCommande.Size = new System.Drawing.Size(200, 41);
+            this.button_AjoutCommande.Size = new System.Drawing.Size(267, 50);
             this.button_AjoutCommande.TabIndex = 10;
             this.button_AjoutCommande.Text = "Ajouter les articles";
             this.button_AjoutCommande.UseVisualStyleBackColor = true;
@@ -152,9 +165,10 @@ namespace GestionInventaireWinForms
             // button_FinCommande
             // 
             this.button_FinCommande.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FinCommande.Location = new System.Drawing.Point(768, 586);
+            this.button_FinCommande.Location = new System.Drawing.Point(1024, 721);
+            this.button_FinCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_FinCommande.Name = "button_FinCommande";
-            this.button_FinCommande.Size = new System.Drawing.Size(390, 41);
+            this.button_FinCommande.Size = new System.Drawing.Size(520, 50);
             this.button_FinCommande.TabIndex = 11;
             this.button_FinCommande.Text = "Terminer la commande";
             this.button_FinCommande.UseVisualStyleBackColor = true;
@@ -162,9 +176,9 @@ namespace GestionInventaireWinForms
             // 
             // AjoutCommande
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1427, 689);
+            this.ClientSize = new System.Drawing.Size(1903, 848);
             this.Controls.Add(this.button_FinCommande);
             this.Controls.Add(this.button_AjoutCommande);
             this.Controls.Add(this.textBox_PrixTotal);
@@ -177,8 +191,10 @@ namespace GestionInventaireWinForms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Titre_Commande);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AjoutCommande";
             this.Text = "AjoutCommande";
+            this.Load += new System.EventHandler(this.AjoutCommande_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);

@@ -80,14 +80,19 @@ namespace GestionInventaireWinForms
                     var list = new BindingList<ArticleDTO>(arr);
                     var data = new BindingSource(list, null);
                     comboBox_ArticlesCommande.DataSource = data.DataSource;
-                    comboBox_ArticlesCommande.DisplayMember = "nom";
-                    comboBox_ArticlesCommande.ValueMember = "nom";
+                    comboBox_ArticlesCommande.DisplayMember = "Name";
+                    comboBox_ArticlesCommande.ValueMember = "Name";
                 }
                 else
                 {
                     MessageBox.Show(string.Format("Status code == {0}", webResponse.StatusCode));
                 }
             }
+
+        }
+
+        private void comboBox_ArticlesCommande_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
