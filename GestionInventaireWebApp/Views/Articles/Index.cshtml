@@ -1,0 +1,125 @@
+﻿@model IEnumerable<GestionInventaireWebApp.Models.BDD.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Liste des articles disponibles</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Nom
+            </th>
+            <th>
+                Date de mise en bouteille
+            </th>
+            <th>
+                Prix
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            var d = item.CreateDate;
+            var formatedDate = d.ToString("yyyy");
+
+            var p = item.SellPrice;
+            var prix = p + " Euros";
+
+            if (item.isActive == true)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => formatedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => prix)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
+
+
+<br />
+<br />
+
+<br />
+<br />
+
+
+<h2>Liste des articles indisponibles</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nom
+            </th>
+            <th>
+                Date de mise en bouteille
+            </th>
+            <th>
+                Prix
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            var d = item.CreateDate;
+            var formatedDate = d.ToString("yyyy");
+
+            var p = item.SellPrice;
+            var prix = p + " Euros";
+
+            if (item.isActive == false)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => formatedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => prix)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
